@@ -22,9 +22,9 @@ set -e
         sh_c='sudo -E sh -c'
     fi
 
-    version=`curl -sSL https://raw.githubusercontent.com/joeduffy/blocker/master/res/LATEST`
+    version=`curl -sSL https://raw.githubusercontent.com/chanwit/blocker/master/res/LATEST`
     filename="blocker.$version.Linux-x86_64.tar.gz"
-    download="https://github.com/joeduffy/blocker/releases/download/$version/$filename"
+    download="https://github.com/chanwit/blocker/releases/download/$version/$filename"
 
     echo "Downloading Blocker $version..."
     $sh_c "curl -sSL $download | tar xz"
